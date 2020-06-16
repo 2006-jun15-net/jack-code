@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace proceeduralBasics
+namespace procedural_Basics
 {
     class Program
     {
