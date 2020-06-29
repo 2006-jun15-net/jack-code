@@ -45,10 +45,6 @@ namespace DataAccess.Library.Repos
             throw new NotImplementedException();
         }
 
-        public Customer SingleOrDefault(Expression<Func<Customer, bool>> predicate)
-        {
-            throw new NotImplementedException();
-        }
 
         Customer IRepository<Customer>.Get(int id)
         {

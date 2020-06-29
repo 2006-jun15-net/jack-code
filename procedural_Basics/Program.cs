@@ -6,7 +6,15 @@ namespace procedural_Basics
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //run main method by putting dotnet run
+            //doubles (8 bytes, wide range)
+            //float (4 bytes, less percise than double)
+            Console.WriteLine("What is your name?");
+            string userInput = Console.ReadLine(); 
+            Console.WriteLine("Hello" +userInput); 
+
+
+
         }
     }
 }

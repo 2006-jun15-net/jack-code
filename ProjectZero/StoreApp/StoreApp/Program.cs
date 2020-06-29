@@ -11,11 +11,16 @@ namespace StoreApp
     class Program
     {
         static void Main(string[] args) {
+
+
+
+
+
             using (var unitofWork = new UnitOfWork(new projectZeroContext()))
             {
-
-                unitofWork.Customers.Add(new DataAccess.Library.Entities.Customer { FirstName = "Jack", LastName = "Pflug" });
-                unitofWork.Complete(); 
+                var customer = new Customer { FirstName = "Jack", LastName = "Pflug" }; 
+                unitofWork.Customers.Add(customer);
+                unitofWork.Complete();
 
 
 
@@ -23,7 +28,7 @@ namespace StoreApp
 
 
 
-    }
+        }
     }
 }
 

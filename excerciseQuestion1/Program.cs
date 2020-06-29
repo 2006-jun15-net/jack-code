@@ -12,10 +12,20 @@ namespace excerciseQuestion1
         static void Main(string[] args)
         {
            
-int staircaseLength = 7; 
+ 
+Console.WriteLine("         #" );
+Console.WriteLine("        ##" );
+Console.WriteLine("       ###");
+Console.WriteLine("      ####");
+Console.WriteLine("     #####");
+Console.WriteLine("    ######");
+Console.WriteLine("   #######");
+Console.WriteLine("  ########");
 
-for (int i =0; i < staircaseLength; i++){
-Console.WriteLine("#"); 
+// for (int i =0; i < staircaseLength; i++){
+
+//d
+// Console.WriteLine("#"); 
 
 
 }
@@ -23,4 +33,4 @@ Console.WriteLine("#");
 
         }
     }
-}
+

@@ -33,10 +33,7 @@ namespace DataAccess.Library.Repos
             return Context.Set<TEntity>().Where(predicate);
         }
 
-        public TEntity SingleOrDefault(Expression<Func<TEntity, bool>> predicate)
-        {
-            return Context.Set<TEntity>().SingleOrDefault(predicate);
-        }
+       
 
         public void Add(TEntity entity)
         {
