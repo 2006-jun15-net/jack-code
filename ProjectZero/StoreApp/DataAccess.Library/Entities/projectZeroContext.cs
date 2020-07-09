@@ -6,11 +6,24 @@ namespace DataAccess.Library.Entities
 {
     public partial class projectZeroContext : DbContext
     {
-        public projectZeroContext()
+        public projectZeroContext(string connectionString) : base(GetOptions(connectionString)) 
         {
         }
 
-        public projectZeroContext(DbContextOptions<projectZeroContext> options)
+    //public BooksContext(string connectionString) : base(GetOptions(connectionString))
+    //{
+    //}
+
+    private static DbContextOptions GetOptions(string connectionString)
+    {
+        return SqlServerDbContextOptionsExtensions.UseSqlServer(new DbContextOptionsBuilder(), connectionString).Options;
+    }
+
+
+
+
+
+    public projectZeroContext(DbContextOptions<projectZeroContext> options)
             : base(options)
         {
         }

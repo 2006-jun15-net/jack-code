@@ -5,8 +5,8 @@ using System.Text;
 
 namespace BuisnessLogic.Library.Repos
 {
-    public interface ICustomerRep : IRepository<Customer>
-    {
-        void Add(global::DataAccess.Library.Entities.Customer customer);
-    }
+    //public interface ICustomerRep : IRepository<Customer>
+    //{
+    //    void Add(global::DataAccess.Library.Entities.Customer customer);
+    //}
 }

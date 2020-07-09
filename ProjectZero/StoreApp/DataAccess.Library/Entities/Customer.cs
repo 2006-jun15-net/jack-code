@@ -14,6 +14,7 @@ namespace DataAccess.Library.Entities
         public int CustomerId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string fullName{ get; set;}
 
         public virtual ICollection<Customer> Customers { get; set; }
     }
